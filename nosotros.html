@@ -12,39 +12,37 @@
   </head>
   <body>
 
-<!-- Header -->
-    <header class="bg-dark text-white text-center p-4">
-      <h1>Sobre Nosotros</h1>
-    </header>
-
-    <!-- Sidebar -->
+<!-- Sidebar -->
     <div class="sidebar"></div>
 
+    <!-- Headerr -->
+      <header class="bg-dark text-white text-center p-4">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group mr-2" role="group" aria-label="First group">
+            <a href="index.html" class="btn btn-dark">Inicio</a>
+            <a href="nosotros.html" class="btn btn-dark">Sobre Nosotros</a>
+          </div>
+        </div>
+      </header>
+
         <!-- Main -->
-            <main class="container mt-4">
-                <section class="mb-5">
-                    <h2>Daniel Caicedo</h2>
-                        <p>
-                        Desarrollador en formación, apasionado por la web, la música y la
-                        innovación.
-                        </p>
-                </section>
-                <section>
-                    <h3>Contáctame</h3>
+            <main class="text-center mb-4">
+                  <h1>Sobre Nosotros</h1>
+                    <h3>Contáctanos</h3>
                     <form id="form-contacto" class="row g-3">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label for="nombre" class="form-label">Nombre</label>
                             <input type="text" id="nombre" class="form-control" required />
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label for="email" class="form-label">Correo electrónico</label>
                             <input type="email" id="email" class="form-control" required />
                         </div>
-                        <div class="col-12">
+                        <div class="col-8">
                             <label for="mensaje" class="form-label">Mensaje</label>
                             <textarea id="mensaje" class="form-control" rows="4" required></textarea>
                         </div>
-                        <div class="col-12">
+                        <div class="col-8">
                             <button type="submit" class="btn btn-primary">Enviar</button>
                         </div>
                     </form>
@@ -52,7 +50,7 @@
             </main>
 
 <!-- Footer -->
-    <footer class="bg-dark text-white text-center p-3 mt-5">
+    <footer class="bg-dark text-white text-center p-3">
       <p>&copy; Daniel Caicedo 2025</p>
     </footer>
 

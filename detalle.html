@@ -12,27 +12,35 @@
   </head>
   <body>
 
-    <!-- Sidebar -->
+<!-- Sidebar -->
     <div class="sidebar"></div>
 
-<!-- Header -->
-    <header class="bg-dark text-white text-center p-4">
-      <h1>Detalle de la Imagen</h1>
+    <!-- Headerr -->
+      <header class="bg-dark text-white text-center p-4">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+            <a href="index.html" class="btn btn-dark">Inicio</a>
+            <a href="nosotros.html" class="btn btn-dark">Sobre Nosotros</a>
+        </div>
+        </div>
     </header>
 
-    <!-- Main -->
-        <main class="text-center">
-        <img id="imagen-detalle" src="" alt="" class="img-fluid rounded mb-3" />
-        <h3 id="titulo-imagen"></h3>
-        <p id="autor-imagen" class="text-muted"></p>
-        </main>
+      <!-- Main -->
+          <main class="text-center p-4">
+            <h1>Detalle de la Imagen</h1>
+              <img id="imagen-detalle" src="" alt="" class="img-fluid rounded mb-3" />
+            <h3 id="titulo-imagen"></h3>
+              <p id="autor-imagen" class="text-muted"></p>
+              <p id="biografia-imagen" class="text-dark"></p>
+            <a href="galeria.html" class="btn btn-dark mt-3">Volver a la Galería</a>
+          </main>
 
 <!-- Footer -->       
     <footer class="bg-dark text-white text-center p-3">
       <p>&copy; Daniel Caicedo 2025</p>
     </footer>
 
-<!-- Script para cargar la imagen y detalles -->
+<!-- Script  -->
     <script src="script.js"></script>
     
   </body>

@@ -15,14 +15,20 @@
     <!-- Sidebar -->
         <div class="sidebar"></div>
 
-        <!-- Header -->
+        <!-- Headerr -->
             <header class="bg-dark text-white text-center p-4">
-                <h1>Galería de Imágenes</h1>
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <a href="index.html" class="btn btn-dark">Inicio</a>
+                    <a href="nosotros.html" class="btn btn-dark">Sobre Nosotros</a>
+                </div>
+                </div>
             </header>
 
             <!-- main -->
                 <main>
                     <div class="text-center mb-4">
+                        <h1>Galería de Imágenes</h1>
                         <button class="btn btn-outline-dark m-1 filtro" data-categoria="todas">Todas</button>
                         <button class="btn btn-outline-dark m-1 filtro" data-categoria="dickinson">Bruce Dickinson</button>
                         <button class="btn btn-outline-dark m-1 filtro" data-categoria="harris">Steve Harris</button>
@@ -36,66 +42,124 @@
                     <div class="galeria-grid" id="galeria">
                         <!-- galeria-item -->     
                             <div class="galeria-item dickinson">
+                            <a href="detalle.html?img=bruce1.jpg&autor=Bruce Dickinson&categoria=dickinson">
                                 <img src="assets/bruce1.jpg" alt="dickinson" class="img-fluid rounded" />
+                            </a>
                             </div>
+
                             <div class="galeria-item dickinson">
+                            <a href="detalle.html?img=bruce2.jpeg&autor=Bruce Dickinson&categoria=dickinson">
                                 <img src="assets/bruce2.jpeg" alt="dickinson" class="img-fluid rounded" />
+                            </a>
                             </div>
+
                             <div class="galeria-item gers">
+                            <a href="detalle.html?img=gers1.jpg&autor=Janick Gers&categoria=gers">
                                 <img src="assets/gers1.jpg" alt="gers" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item gers">
-                                <img src="assets/gers2.jpg" alt="gers" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item dickinson">
-                                <img src="assets/bruce3.jpg" alt="dickinson" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item dickinson">
-                                <img src="assets/bruce4.jpg" alt="dickinson" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item harris">
-                                <img src="assets/harris2.jpg" alt="harris" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item harris">
-                                <img src="assets/harris3.avif" alt="harris" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item gers">
-                                <img src="assets/gers3.jpg" alt="gers" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item harris">
-                                <img src="assets/harris1.jpeg" alt="harris" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item harris">
-                                <img src="assets/harris4.jpg" alt="harris" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item mcbrain">
-                                <img src="assets/mcbrain1.jpg" alt="mcbrain" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item mcbrain">
-                                <img src="assets/mcbrain2.jpg" alt="mcbrain" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item mcbrain">
-                                <img src="assets/mcbrain3.jpeg" alt="mcbrain" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item murray">
-                                <img src="assets/murray1.jpg" alt="murray" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item murray">
-                                <img src="assets/murray2.jpg" alt="murray" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item murray">
-                                <img src="assets/murray3.jpg" alt="murray" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item smith">
-                                <img src="assets/smith1.webp" alt="smith" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item smith">
-                                <img src="assets/smith2.webp" alt="smith" class="img-fluid rounded" />
-                            </div>
-                            <div class="galeria-item smith">
-                                <img src="assets/smith3.jpg" alt="smith" class="img-fluid rounded" />
+                            </a>
                             </div>
                             
+                            <div class="galeria-item gers">
+                            <a href ="detalle.html?img=gers2.jpg&autor=Janick Gers&categoria=gers">
+                                <img src="assets/gers2.jpg" alt="gers" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item dickinson">
+                                <a href="detalle.html?img=bruce3.jpg&autor=Bruce Dickinson&categoria=dickinson">
+                                <img src="assets/bruce3.jpg" alt="dickinson" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item dickinson">
+                            <a href="detalle.html?img=bruce4.jpg&autor=Bruce Dickinson&categoria=dickinson">
+                                <img src="assets/bruce4.jpg" alt="dickinson" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item harris">
+                            <a href="detalle.html?img=harris2.jpg&autor=Steve Harris&categoria=harris">
+                                <img src="assets/harris2.jpg" alt="harris" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item harris">
+                            <a href="detalle.html?img=harris3.avif&autor=Steve Harris&categoria=harris">
+                                <img src="assets/harris3.avif" alt="harris" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item gers">
+                            <a href="detalle.html?img=gers3.jpg&autor=Janick Gers&categoria=gers">
+                                <img src="assets/gers3.jpg" alt="gers" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item harris">
+                            <a href="detalle.html?img=harris1.jpeg&autor=Steve Harris&categoria=harris">
+                                <img src="assets/harris1.jpeg" alt="harris" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item harris">
+                            <a href="detalle.html?img=harris4.jpg&autor=Steve Harris&categoria=harris">
+                                <img src="assets/harris4.jpg" alt="harris" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item mcbrain">
+                            <a href="detalle.html?img=mcbrain1.jpg&autor=Nicko McBrain&categoria=mcbrain">
+                                <img src="assets/mcbrain1.jpg" alt="mcbrain" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item mcbrain">
+                            <a href="detalle.html?img=mcbrain2.jpg&autor=Nicko McBrain&categoria=mcbrain">
+                                <img src="assets/mcbrain2.jpg" alt="mcbrain" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item mcbrain">
+                            <a href="detalle.html?img=mcbrain3.jpeg&autor=Nicko McBrain&categoria=mcbrain">
+                                <img src="assets/mcbrain3.jpeg" alt="mcbrain" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item murray">
+                            <a href="detalle.html?img=murray1.jpg&autor=Dave Murray&categoria=murray">
+                                <img src="assets/murray1.jpg" alt="murray" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item murray">
+                            <a href="detalle.html?img=murray2.jpg&autor=Dave Murray&categoria=murray">
+                                <img src="assets/murray2.jpg" alt="murray" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item murray">
+                            <a href="detalle.html?img=murray3.jpg&autor=Dave Murray&categoria=murray">
+                                <img src="assets/murray3.jpg" alt="murray" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item smith">
+                            <a href="detalle.html?img=smith1.webp&autor=Adrian Smith&categoria=smith">
+                                <img src="assets/smith1.webp" alt="smith" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item smith">
+                            <a href="detalle.html?img=smith2.webp&autor=Adrian Smith&categoria=smith">
+                                <img src="assets/smith2.webp" alt="smith" class="img-fluid rounded" />
+                            </a>
+                            </div>
+                            
+                            <div class="galeria-item smith">
+                            <a href="detalle.html?img=smith3.jpg&autor=Adrian Smith&categoria=smith">
+                                <img src="assets/smith3.jpg" alt="smith" class="img-fluid rounded" />
+                            </a>
+                            </div>                         
                     </div>
                     <section class="text-center mb-5">
                             <a href="index.html" class="btn btn-outline-dark m-1">Volver al Inicio</a>
