@@ -83,7 +83,6 @@ main {
   }
   
 
-/* Responsivo para pantallas más pequeñas */
 @media (max-width: 1200px) {
   .galeria-grid {
     grid-template-columns: repeat(3, 1fr);
