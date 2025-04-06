@@ -12,36 +12,94 @@
   </head>
   <body>
 
+    <!-- Sidebar -->
+    <div class="sidebar"></div>
+
     <!-- Header -->
     <header class="bg-dark text-white text-center p-4">
         <h1>Galería de Imágenes</h1>
     </header>
 
-    <!-- main -->
+ <!-- main -->
     <main>
-        <!-- Galery -->
-        <div class="row mt-4" id="galeria">
-            <div class="text-center mb-4">
-                <button class="btn btn-outline-primary m-1 filtro" data-categoria="todas">Todas</button>
-                <button class="btn btn-outline-success m-1 filtro" data-categoria="naturaleza">Naturaleza</button>
-                <button class="btn btn-outline-warning m-1 filtro" data-categoria="animales">Animales</button>
-                <button class="btn btn-outline-info m-1 filtro" data-categoria="ciudades">Ciudades</button>
-              </div>
-            <div class="col-md-4 mb-4 galeria-item iron maiden">
-                <img src="assets/1.jpg" alt="maiden1" class="img-fluid rounded" />
-            </div>
-            <div class="col-md-4 mb-4 galeria-item maiden2">
-                <img src="assets/2.jpg" alt="maiden2" class="img-fluid rounded" />
-            </div>
-            <div class="col-md-4 mb-4 galeria-item maiden3">
-                <img src="assets/3.jpg" alt="maiden3" class="img-fluid rounded" />
-            </div>
+
+        <div class="text-center mb-4">
+            <button class="btn btn-outline-dark m-1 filtro" data-categoria="todas">Todas</button>
+            <button class="btn btn-outline-dark m-1 filtro" data-categoria="dickinson">Bruce Dickinson</button>
+            <button class="btn btn-outline-dark m-1 filtro" data-categoria="harris">Steve Harris</button>
+            <button class="btn btn-outline-dark m-1 filtro" data-categoria="mcbrain">Nicko McBrain</button>
+            <button class="btn btn-outline-dark m-1 filtro" data-categoria="murray">Dave Murray</button>
+            <button class="btn btn-outline-dark m-1 filtro" data-categoria="smith">Adrian Smith</button>
+            <button class="btn btn-outline-dark m-1 filtro" data-categoria="gers">Janick Gers</button>
+          </div>
+    
+          <!-- Galery -->
+        <div class="galeria-grid" id="galeria">
+            <!-- Images -->     
+                <div class="galeria-item dickinson">
+                    <img src="assets/bruce1.jpg" alt="dickinson" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item dickinson">
+                    <img src="assets/bruce2.jpeg" alt="dickinson" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item gers">
+                    <img src="assets/gers1.jpg" alt="gers" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item gers">
+                    <img src="assets/gers2.jpg" alt="gers" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item dickinson">
+                    <img src="assets/bruce3.jpg" alt="dickinson" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item dickinson">
+                    <img src="assets/bruce4.jpg" alt="dickinson" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item harris">
+                    <img src="assets/harris2.jpg" alt="harris" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item harris">
+                    <img src="assets/harris3.avif" alt="harris" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item gers">
+                    <img src="assets/gers3.jpg" alt="gers" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item harris">
+                    <img src="assets/harris1.jpeg" alt="harris" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item harris">
+                    <img src="assets/harris4.jpg" alt="harris" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item mcbrain">
+                    <img src="assets/mcbrain1.jpg" alt="mcbrain" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item mcbrain">
+                    <img src="assets/mcbrain2.jpg" alt="mcbrain" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item mcbrain">
+                    <img src="assets/mcbrain3.jpeg" alt="mcbrain" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item murray">
+                    <img src="assets/murray1.jpg" alt="murray" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item murray">
+                    <img src="assets/murray2.jpg" alt="murray" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item murray">
+                    <img src="assets/murray3.jpg" alt="murray" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item smith">
+                    <img src="assets/smith1.webp" alt="smith" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item smith">
+                    <img src="assets/smith2.webp" alt="smith" class="img-fluid rounded" />
+                </div>
+                <div class="galeria-item smith">
+                    <img src="assets/smith3.jpg" alt="smith" class="img-fluid rounded" />
+                </div>
+                
         </div>
         <section class="text-center mb-5">
-            <h2>Categorías Destacadas</h2>
-            <p>Explora las imágenes según tus intereses</p>
-            <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
+                <a href="index.html" class="btn btn-outline-dark m-1">Volver al Inicio</a>
             </div>
         </section>
     </main>
@@ -49,7 +107,7 @@
         
     
         <!-- Footer-->
-    <footer class="bg-dark text-white text-center p-3 mt-5">
+    <footer class="bg-dark text-white text-center p-3">
        <p>&copy; Daniel Caicedo 2025</p>
     </footer>
 
