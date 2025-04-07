@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 260px 1fr;
     grid-template-rows: auto 1fr auto;
     gap: 10px;
     height: 100vh;
@@ -13,8 +13,18 @@ body {
     background-color: #141414;
     grid-column: 1 / 2;
     grid-row: 1 / span 3;
+    padding: 20px;
+    overflow: hidden;
   }
-
+  .sidebar h5 {
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .lh-lg li {
+    margin-bottom: 0.9rem;
+  }
+  
 header {
     background-color: #141414;
     grid-column: 2 / 3;
@@ -31,7 +41,10 @@ main {
     padding: 20px;
     margin: 0;
     width: 100%;
+    
+
 }
+
  /* Galery */
 
     .galeria-grid {
@@ -125,5 +138,93 @@ main {
 @media (max-width: 480px) {
   .galeria-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive para tablets y móviles */
+@media (max-width: 992px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header,
+  main,
+  .sidebar,
+  footer {
+    width: 100%;
+  }
+
+  .sidebar {
+    order: 3; 
+  }
+
+  header {
+    order: 1;
+  }
+
+  main {
+    order: 2;
+  }
+
+  footer {
+    order: 4;
+  }
+
+  /* Botones menú  */
+  .btn-toolbar .btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn-toolbar .btn-group .btn {
+    width: 90%;
+  }
+}
+
+/* Moviles */
+@media (max-width: 576px) {
+  .btn-toolbar .btn-group .btn {
+    width: 100%;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tarjetas integrantes y souvenirs */
+  .row.justify-content-center {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row.justify-content-center .col-6 {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    display: block;
+    background-color: #141414;
+    color: white;
+    padding: 20px;
+    overflow: visible;
+  }
+
+  .sidebar .p-4 {
+    padding: 10px 0 !important;
+  }
+
+  .sidebar ol {
+    padding-left: 20px;
+  }
+
+  .sidebar li {
+    color: white;
+    font-size: 1rem;
   }
 }
