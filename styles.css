@@ -36,7 +36,7 @@ main {
 
     .galeria-grid {
         display: grid;
-        grid-template-columns: repeat(3, 10cm);
+        grid-template-columns: repeat(4, 7cm);
         gap: 1cm; 
         justify-content: center;
         padding: 10px;
@@ -63,6 +63,15 @@ main {
       transform: scale(1.03);
     }
     
+    .card-img-top {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+    
+
     #imagen-detalle {
       
       width: 100%;
@@ -109,7 +118,7 @@ main {
 
 @media (max-width: 768px) {
   .galeria-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
