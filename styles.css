@@ -76,12 +76,29 @@ main {
       transform: scale(1.03);
     }
     
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover{
+      transform:  scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+
     .card-img-top {
       width: 100%;
       aspect-ratio: 1 / 1;
       object-fit: cover;
       border-top-left-radius: 0.5rem;
       border-top-right-radius: 0.5rem;
+    }
+
+    .card-body {
+      background-color: white;
+      padding: 1rem;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
     
 
