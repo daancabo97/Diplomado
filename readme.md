@@ -20,5 +20,5 @@ IRON MAIDEN - PROYECTO WEB
         -Luego en la raiz del proyecto se debe ejecutar: http-server-
         -NPbar el navegador en: http://localhost:8080
 
-NOTA: Las imagenes de souvenirs son las unicas que no tienen filtro, solo las de los integrantes tienen filtro
+NOTA: Las imagenes de souvenirs son las unicas que no tienen filtro, solo las de los integrantes de la banda tienen filtro
  -->
