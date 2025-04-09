@@ -1,3 +1,5 @@
+/* Body */
+
 body {
     display: grid;
     grid-template-columns: 260px 1fr;
@@ -8,6 +10,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
   }
+
+/* Sidebar */
 
   .sidebar {
     background-color: #141414;
@@ -30,6 +34,8 @@ body {
     margin-bottom: 0.9rem;
   }
   
+/* Header */
+
 header {
     background-color: #141414;
     grid-column: 2 / 3;
@@ -38,6 +44,8 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+/* Main */
 
 main {
     background-color: #bfbfbf;
@@ -50,7 +58,7 @@ main {
 
 }
 
- /* Galery */
+ /* Imagenes de la galeria en (galeria.html) */
 
     .galeria-grid {
         display: grid;
@@ -85,6 +93,8 @@ main {
       display: block;
     }
     
+  /* Cartas de souvenirs del (index.html) */
+
     .card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       border: 2px solid black !important;
@@ -113,6 +123,7 @@ main {
       border-bottom-right-radius: 10px;
     }
     
+/* Detalle de la imagen en (detalle.html) */
 
     #imagen-detalle {
       
@@ -164,7 +175,7 @@ main {
       line-height: 1.6;
     }
     
- /* Titulos */
+ /* General Titulos*/
   
   h1, h2, h3 {
     color: #141414;
@@ -179,7 +190,7 @@ main {
   .btn:hover {
     transform: scale(1.05);
   }
-/* Estilos Botones categorias integrantes (galeria.html) */
+/* Estilos de Botones de las categorias integrantes (galeria.html) */
 
   .filtro {
     background-color: #2c2c2c;
