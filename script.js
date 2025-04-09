@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 dickinson:{ 
                   biografia:"Paul Bruce Dickinson (Worksop, Nottinghamshire, 7 de agosto de 1958), más conocido como Bruce Dickinson, es un cantante, compositor, músico, productor musical, esgrimista, empresario, escritor, historiador, locutor, presentador, guionista, catedrático universitario y piloto de aviación británico. Es famoso por ser el vocalista, frontman y cocompositor de la banda de heavy metal Iron Maiden. Es considerado por muchos expertos de canto, medios y el público en general como uno de los mejores cantantes de la historia de este género. También posee un nivel intermedio de interpretación en guitarra y el piano, mostrado principalmente en su carrera en solitario así como en la canción de Iron Maiden, Empire of the Clouds.",
                   estatura: "1.68 m",
-                  hobbies: "Pilotar aviones, practicar esgrima, escribir libros, enseñar historia, hacer radio",
+                  hobbies: "Pilotear aviones, practicar esgrima, escribir libros, enseñar historia, trabajar en la radio",
                   datoCurioso: "Es el piloto del avion de la banda, tiene su propia empresa de mantenimiento de aviones y superó un cáncer de lengua diagnosticado en 2014, el cual fue causal a la práctica de sexo oral, según declaraciones médicas."
                 },
                 harris:{ 

@@ -259,6 +259,15 @@ main {
   .galeria-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .detalle-flex {
+    flex-direction: column;
+    gap: 30px; /* para que no se vean pegados en móviles */
+  }
+
+  .detalle-texto {
+    text-align: center; /* se centra el texto en móvil si quieres */
+  }
 }
 
 @media (max-width: 480px) {
