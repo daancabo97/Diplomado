@@ -140,7 +140,7 @@ main {
       justify-content: center;
       align-items: flex-start;
       flex-wrap: wrap;
-      margin-top: 40px;
+      margin-top: 60px;
     }
     
     .detalle-flex img {
@@ -152,7 +152,7 @@ main {
     
     .detalle-texto {
       max-width: 500px;
-      text-align: left;
+      text-align: justify;
     }
     
     .detalle-texto h3 {
