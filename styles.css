@@ -82,6 +82,7 @@ main {
     
     .card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid black !important;;
     }
 
     .card:hover{
