@@ -96,12 +96,17 @@ main {
       margin: 0 auto;
     }
     
- /* - */
+    imag-fluid img{
+        transform: scale(1.03);
+    }
+ /* Titulos */
   
   h1, h2, h3 {
     color: #141414;
   }
   
+  /* Estilos generales botones */
+
   .btn {
     transition: all 0.3s ease;
   }
@@ -109,6 +114,51 @@ main {
   .btn:hover {
     transform: scale(1.05);
   }
+/* Estilos Botones categorias integrantes (galeria.html) */
+
+  .filtro {
+    background-color: #2c2c2c;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 8px 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .filtro:hover {
+    background-color: #444;
+    border-color: #777;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+/* Estilos Boton ver galeria (index.html) */
+
+.btn-principales {
+  background-color: #000000; 
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 32px; 
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-principales:hover {
+  background-color: #1a1a1a; 
+  transform: scale(1.07);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+
 
  /* Footer */
   
