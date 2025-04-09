@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 dickinson:{ biografia:"Paul Bruce Dickinson (Worksop, Nottinghamshire, 7 de agosto de 1958), más conocido como Bruce Dickinson, es un cantante, compositor, músico, productor musical, esgrimista, empresario, escritor, historiador, locutor, presentador, guionista, catedrático universitario y piloto de aviación británico. Es famoso por ser el vocalista, frontman y cocompositor de la banda de heavy metal Iron Maiden. Es considerado por muchos expertos de canto, medios y el público en general como uno de los mejores cantantes de la historia de este género. También posee un nivel intermedio de interpretación en guitarra y el piano, mostrado principalmente en su carrera en solitario así como en la canción de Iron Maiden, Empire of the Clouds.",
                   estatura: "1.68 m",
                   hobbies: "Pilotar aviones, practicar esgrima, escribir libros, enseñar historia, hacer radio",
-                  datoCurioso: "Es piloto comercial de la banda, tiene su propia empresa de mantenimiento de aviones y superó un cáncer de lengua diagnosticado en 2014, el cual fue causal a la práctica de sexo oral, según declaraciones médicas."
+                  datoCurioso: "Es el piloto del avion de la banda, tiene su propia empresa de mantenimiento de aviones y superó un cáncer de lengua diagnosticado en 2014, el cual fue causal a la práctica de sexo oral, según declaraciones médicas."
                 },
                 harris:{ biografia: "Stephen Percy Harris, (Waltham Forest, Gran Londres, Inglaterra, 12 de marzo de 1956) conocido artísticamente como Steve Harris, es un exfutbolista y músico británico, siendo mayormente conocido por ser el fundador, bajista, teclista, compositor principal y líder del grupo británico de heavy metal Iron Maiden. Además de su labor como bajista en la banda, es escritor, y ha llevado a cabo muchas otras funciones para el grupo, como la producción y la coproducción de sus álbumes, dirigir y editar sus videos en vivo, y la realización de los teclados de estudio y sintetizadores. Es considerado por medios de prensa, otros bajistas, y el público en general como uno de los mejores bajistas de metal de todos los tiempos, tanto por su estilo a la hora de tocar, su calidad como compositor, y su actitud aguerrida sobre el escenario.",
                   estatura: "1.74 m",
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
           };
 
 
-          
+
           const datos = integrantes[categoria];
 
           if (datos) {
