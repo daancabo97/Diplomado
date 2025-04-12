@@ -93,22 +93,22 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         }
 
-
+        emailjs.init("GoJXwoaefx-xLwI1V");
 
 /* Envío de formulario de contacto */
         document.getElementById("form-contacto").addEventListener("submit", function(e) {
           e.preventDefault();
 
           var templateParams = {
-            nombre: document.getElementById("nombre").value,
+            name: document.getElementById("nombre").value,
             email: document.getElementById("email").value,
-            mensaje: document.getElementById("mensaje").value
+            message: document.getElementById("mensaje").value
         };
-
-        
-          emailjs.send("service_taysuun", "oebd77m", templateParams )
+       
+          emailjs.send("service_exosqmk", "template_ig6ufr5", templateParams )
             .then(function(response) {
               console.log("Éxito:", response.status, response.text);
+              console.log(response);
               alert("Correo enviado con éxito");
               document.getElementById("form-contacto").reset();
           }, function(error) {

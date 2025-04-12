@@ -8,12 +8,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-  (function(){
-      emailjs.init("gabnuJB9xzB3558oP");
-  })();
-  </script>
-  <script src="script.js"></script>
 </head>
 
 <body>
@@ -66,7 +60,7 @@
     <section class="container text-center my-5">
       <h5>Contáctanos</h5>
   </section>
-    <form id="form-contacto" class="row g-3">
+    <form id="form-contacto" class="row g-3" method="POST" action="#">
       <div class="col-md-6">
         <label for="nombre" class="form-label">Nombre</label>
         <input type="text" id="nombre" name="name" class="form-control" required />
@@ -95,6 +89,12 @@
   <footer class="bg-dark text-white text-center p-3">
     <p> Daniel Caicedo 2025 &copy;</p>
   </footer>
+
+    <script>
+      (function(){
+          emailjs.init("GoJXwoaefx-xLwI1V");
+      })();
+    </script>
 
   <script src="script.js"></script>
 

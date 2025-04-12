@@ -164,6 +164,7 @@ main {
     .detalle-texto {
       max-width: 500px;
       text-align: justify;
+      margin-right: 8%;
     }
     
     .detalle-texto h3 {
@@ -172,7 +173,7 @@ main {
     }
     
     .detalle-texto p {
-      line-height: 1.6;
+      line-height: -  1.6;
     }
     
  /* General Titulos*/
@@ -247,36 +248,53 @@ main {
     margin: 0; 
   }
   
- /* Responsive */
+ /* Responsive pantallas grandes*/
+
+ @media (max-width: 1280px) {
+
+  .detalle-texto {
+    margin-top: 45px;
+  }
+}
 
 @media (max-width: 1200px) {
   .galeria-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-@media (max-width: 768px) {
-  .galeria-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .detalle-flex {
-    flex-direction: column;
-    gap: 30px; /* para que no se vean pegados en móviles */
-  }
 
   .detalle-texto {
-    text-align: center; /* se centra el texto en móvil si quieres */
-  }
-}
-
-@media (max-width: 480px) {
-  .galeria-grid {
-    grid-template-columns: 1fr;
+    margin-top: 45px;
   }
 }
 
 /* Responsive para tablets y móviles */
+
+@media (max-width: 992px) {
+  .sidebar {
+    display: block;
+    background-color: #141414;
+    color: white;
+    padding: 20px;
+    overflow: visible;
+  }
+
+  .sidebar .p-4 {
+    padding: 10px 0 !important;
+  }
+
+  .sidebar ol {
+    padding-left: 20px;
+  }
+
+  .sidebar li {
+    color: white;
+    font-size: 1rem;
+  }
+}
+
+
+/* Responsive para tablets y móviles */
+
 @media (max-width: 992px) {
   body {
     display: flex;
@@ -306,7 +324,12 @@ main {
     order: 4;
   }
 
+  .detalle-texto {
+    margin-top: 45px;
+  }
+
   /* Botones menú  */
+
   .btn-toolbar .btn-group {
     display: flex;
     flex-direction: column;
@@ -319,7 +342,37 @@ main {
   }
 }
 
-/* Moviles */
+/* Responsive para tablets y móviles */
+
+@media (max-width: 768px) {
+  .galeria-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .detalle-flex {
+    flex-direction: column;
+    gap: 30px; 
+  }
+
+  .detalle-texto {
+    text-align: center; 
+  }
+
+  .detalle-texto p{
+    text-align: justify; 
+  }
+
+  .filtros-verticales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+
+/* Reponsive para Moviles */
+
 @media (max-width: 576px) {
   .btn-toolbar .btn-group .btn {
     width: 100%;
@@ -339,27 +392,28 @@ main {
     width: 100%;
     max-width: 300px;
   }
-}
 
-@media (max-width: 992px) {
-  .sidebar {
-    display: block;
-    background-color: #141414;
-    color: white;
-    padding: 20px;
-    overflow: visible;
-  }
-
-  .sidebar .p-4 {
-    padding: 10px 0 !important;
-  }
-
-  .sidebar ol {
-    padding-left: 20px;
-  }
-
-  .sidebar li {
-    color: white;
-    font-size: 1rem;
+  .filtros-verticales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 }
+
+
+@media (max-width: 480px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filtros-verticales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+
+
