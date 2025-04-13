@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       "Figuras de colección": {
         descripcion: "Figuras de Eddie The Trooper.",
-        video: "https://www.youtube.com/embed/PhFckxgbSE8"
+        video: "https://youtu.be/K7Eirw45gyg"
       },
       Camiones: {
         descripcion: "Camión de gira a escala.",
@@ -85,9 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("titulo-souvenir").textContent = autor;
       document.getElementById("texto-souvenir").textContent = souvenirs[categoria].descripcion;
       document.getElementById("video-detalle").innerHTML = `
-        <div class="ratio ratio-16x9">
-          <iframe src="${souvenirs[categoria].video}" title="Video ${autor}" allowfullscreen></iframe>
-        </div>
+        <iframe src="${souvenirs[categoria].video}" title="Video ${autor}" allowfullscreen></iframe>    
       `;
       return; // No ejecuta lo de integrantes
     }
