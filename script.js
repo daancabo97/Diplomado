@@ -36,6 +36,63 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("autor-imagen").textContent = "Integrante de Iron Maiden";
 
 
+
+    // 👇 AÑADIMOS ESTO SIN TOCAR TU LÓGICA
+    const souvenirs = {
+      Monopolio: {
+        descripcion: "Juego de mesa edición Iron Maiden.",
+        video: "https://www.youtube.com/embed/1g3_CFmnU7k"
+      },
+      Cervezas: {
+        descripcion: "Cervezas Trooper edición especial.",
+        video: "https://www.youtube.com/embed/rnZdiR0A5NM"
+      },
+      Camisetas: {
+        descripcion: "Camisetas oficiales de la banda.",
+        video: "https://www.youtube.com/embed/FG1NrQYXjLU"
+      },
+      Candelabros: {
+        descripcion: "Candelabros temáticos Iron Maiden.",
+        video: "https://www.youtube.com/embed/4J7QaoG-KeI"
+      },
+      "Figuras de colección": {
+        descripcion: "Figuras de Eddie The Trooper.",
+        video: "https://www.youtube.com/embed/PhFckxgbSE8"
+      },
+      Camiones: {
+        descripcion: "Camión de gira a escala.",
+        video: "https://www.youtube.com/embed/n2WpdGAs5Nw"
+      },
+      Balones: {
+        descripcion: "Balón Maiden edición limitada.",
+        video: "https://www.youtube.com/embed/qB2UgKmfh2A"
+      },
+      Buzos: {
+        descripcion: "Buzo Senjutsu original.",
+        video: "https://www.youtube.com/embed/NkULdUtp8bU"
+      }
+    };
+
+    if (souvenirs[categoria]) {
+      // Oculta sección de integrantes si existe
+      const bloqueIntegrante = document.getElementById("detalle-integrante");
+      if (bloqueIntegrante) bloqueIntegrante.style.display = "none";
+
+      // Muestra sección de souvenirs
+      const bloqueSouvenir = document.getElementById("detalle-souvenir");
+      if (bloqueSouvenir) bloqueSouvenir.style.display = "block";
+
+      document.getElementById("titulo-souvenir").textContent = autor;
+      document.getElementById("texto-souvenir").textContent = souvenirs[categoria].descripcion;
+      document.getElementById("video-detalle").innerHTML = `
+        <div class="ratio ratio-16x9">
+          <iframe src="${souvenirs[categoria].video}" title="Video ${autor}" allowfullscreen></iframe>
+        </div>
+      `;
+      return; // No ejecuta lo de integrantes
+    }
+
+
           const integrantes = {
 
                 dickinson:{ 
