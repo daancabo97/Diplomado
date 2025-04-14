@@ -30,5 +30,9 @@ IRON MAIDEN - PROYECTO WEB
                                         "keywords": [],
                                         "author": "",
                                         "license": "ISC"
-                                }               
+                                }         
+
+              npm install
+              node server.js
+                        
  -->
