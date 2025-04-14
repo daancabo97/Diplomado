@@ -38,30 +38,39 @@ document.addEventListener("DOMContentLoaded", function () {
           const souvenirs = {
             Monopolio: {
               descripcion: "Juego de mesa edición Iron Maiden.",       
+              precio: "$75.000"
             },
             Cervezas: {
               descripcion: "Cervezas Trooper edición especial.",    
+              precio: "$55.000"
             },
             Camisetas: {
               descripcion: "Camisetas oficiales de la banda.",        
+              precio: "$160.000"
             },
             Candelabros: {
               descripcion: "Candelabros temáticos Iron Maiden.",        
+              precio: "$80.000"
             },
             "Figuras de colección": {
               descripcion: "Figuras de Eddie The Trooper.",       
+              precio: "$130.000"
             },
             Camiones: {
               descripcion: "Camión de gira a escala.",       
+            precio: "$110.000"
             },
             Camisetas: {
               descripcion: "Camisetas oficiales de la banda.",        
+            precio: "$160.000"
             },
             Balones: {
               descripcion: "Balón Maiden edición limitada.",       
+              precio: "$80.000"
             },
             Buzos: {
               descripcion: "Buzo Senjutsu original.",      
+              precio: "$230.000"
             }
           };
 
@@ -76,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
               document.getElementById("titulo-souvenir").textContent = autor;
               document.getElementById("texto-souvenir").textContent = souvenirs[categoria].descripcion;
+              document.getElementById("precio-souvenir").textContent = `Precio: ${souvenirs[categoria].precio}`;
               return; // No retornar la seccion de integrantes
             }
 
