@@ -156,26 +156,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* Envío de formulario de contacto */
 
-        document.getElementById("form-contacto").addEventListener("submit", function(e) {
-          e.preventDefault();
 
-          var templateParams = {
-            name: document.getElementById("nombre").value,
-            email: document.getElementById("email").value,
-            message: document.getElementById("mensaje").value
-        };
-       
-          emailjs.send("service_exosqmk", "template_ig6ufr5", templateParams )
-            .then(function(response) {
-              console.log("Éxito:", response.status, response.text);
-              console.log(response);
-              alert("Correo enviado con éxito");
-              document.getElementById("form-contacto").reset();
-          }, function(error) {
-            console.error("Error al enviar:", error); 
-            alert("Error al enviar el correo.");
-          });
-        });
-});
+    document.getElementById("form-contacto").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const data = {
+        name: document.getElementById("nombre").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("mensaje").value
+      };
+
+      fetch("http://localhost:3000/enviar-correo", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => response.json())
+      .then(result => {
+        if (result.success) {
+          alert("Correo enviado con éxito");
+          document.getElementById("form-contacto").reset();
+        } else {
+          alert("Error al enviar el correo");
+        }
+      })
+      .catch(error => {
+        console.error("Error:", error);
+        alert("Error al enviar el correo.");
+      });
+    });
+})
 
 

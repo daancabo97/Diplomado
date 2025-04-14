@@ -8,17 +8,27 @@ IRON MAIDEN - PROYECTO WEB
         -galeria.html -> Galería: Vista general con miniaturas y filtros.
         -detalle.html -> Detalle de imagen: Vista ampliada con descripción y autor
         -nosotros.html -> Sobre nosotros: Información de los autores con formulario de contacto
+        -script.js ->  Maneja la logica de filtro por imagenes, ver detalle de la imagen y correo
+        -server.js -> Servidor para correo 
 
-- >  FUNCIONALIDAD DEL FORMULARIO.(script.js):
+- >  FUNCIONALIDAD DEL FORMULARIO DE CONTACTO:
 
-        -https://dashboard.emailjs.com/admin
-        -El proyecto usa EmailJS para probar el envio de los correos
-        -Para que funcione correctamente se debe probar desde un servidor local o remoto (HTTP/HTTPS)
-        -Se debe condigurar correctamente el Service ID, Template ID y User ID en el script.js.
-        -Tener Node.js instalado y abrir la terminal de visual
-        -Instalar http-server y se ejecuta: npm install -g http-server
-        -Luego en la raiz del proyecto se debe ejecutar: http-server-
-        -NPbar el navegador en: http://localhost:8080
+        Referencia funcionalidad: https://www.nodemailer.com/about/
 
-NOTA: Las imagenes de souvenirs son las unicas que no tienen filtro, solo las de los integrantes de la banda tienen filtro
+        Dependencias nodemailer:{
+                                        "dependencies": {
+                                        "nodemailer": "^6.10.1"
+                                        },
+                                        "scripts": {
+                                        "start": "node server.js"
+                                        },
+                                        "name": "primerproyecto",
+                                        "description": "<!--",
+                                        "version": "1.0.0",
+                                        "main": "script.js",
+                                        "devDependencies": {},
+                                        "keywords": [],
+                                        "author": "",
+                                        "license": "ISC"
+                                }               
  -->
