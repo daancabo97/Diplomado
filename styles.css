@@ -311,10 +311,43 @@ footer {
     flex: 1;
   }
 
+  #imagen-detalle {
+    width: 100%;
+    max-width: 10cm;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+  }
+  
+  #imagen-detalle:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
   #autor-imagen {
     text-align: center !important;
     display: block;
     margin-bottom: 10px;
+  }
+  
+  #detalle-souvenir {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff00; 
+    border-radius: 10px;          
+  }
+  
+  #detalle-souvenir:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 }
 
@@ -364,10 +397,43 @@ footer {
     text-align: justify;
   }
 
+  #imagen-detalle {
+    width: 100%;
+    max-width: 10cm;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+  }
+  
+  #imagen-detalle:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
   #autor-imagen {
     text-align: center !important;
     display: block;
     margin-bottom: 10px;
+  }
+  
+  #detalle-souvenir {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff00; 
+    border-radius: 10px;          
+  }
+  
+  #detalle-souvenir:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 }
 
@@ -448,6 +514,45 @@ footer {
     color: white;
     font-size: 1rem;
   }
+
+  #imagen-detalle {
+    width: 100%;
+    max-width: 10cm;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+  }
+  
+  #imagen-detalle:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  #autor-imagen {
+    text-align: center !important;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #detalle-souvenir {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff00; 
+    border-radius: 10px;          
+  }
+  
+  #detalle-souvenir:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 }
 
 /* Responsive texto detalle para tablets y móviles */
@@ -506,6 +611,45 @@ footer {
       align-items: center;
       gap: 12px;
     }
+
+    #imagen-detalle {
+      width: 100%;
+      max-width: 10cm;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 5px;
+      margin: 0 auto;
+      background-color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: block;
+    }
+    
+    #imagen-detalle:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+    
+    #autor-imagen {
+      text-align: center !important;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    #detalle-souvenir {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff00; 
+      border-radius: 10px;          
+    }
+    
+    #detalle-souvenir:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
   }
 
   /* Reponsive para Moviles */
@@ -555,6 +699,45 @@ footer {
     .detalle-texto p {
       text-align: justify;
     }
+
+    #imagen-detalle {
+      width: 100%;
+      max-width: 10cm;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 5px;
+      margin: 0 auto;
+      background-color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: block;
+    }
+    
+    #imagen-detalle:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+    
+    #autor-imagen {
+      text-align: center !important;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    #detalle-souvenir {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff00; 
+      border-radius: 10px;          
+    }
+    
+    #detalle-souvenir:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
   }
 
   /* Responsive pantallas pequeñas*/
@@ -582,6 +765,45 @@ footer {
     .detalle-texto ul,
     .detalle-texto p {
       text-align: justify;
+    }
+
+    #imagen-detalle {
+      width: 100%;
+      max-width: 10cm;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 5px;
+      margin: 0 auto;
+      background-color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: block;
+    }
+    
+    #imagen-detalle:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+    
+    #autor-imagen {
+      text-align: center !important;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    #detalle-souvenir {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff00; 
+      border-radius: 10px;          
+    }
+    
+    #detalle-souvenir:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
   }
 }
