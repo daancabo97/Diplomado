@@ -32,6 +32,7 @@ IRON MAIDEN - PROYECTO WEB
                                         "license": "ISC"
                                 }         
 
+              Instalar Node.js  version 14 o superior
               npm install
               node server.js
                         
