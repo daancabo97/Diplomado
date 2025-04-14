@@ -21,75 +21,68 @@ document.addEventListener("DOMContentLoaded", function () {
           });
         }
 
- /* Mostrar detalle de la imagen */
+        const params = new URLSearchParams(window.location.search);
+        const imagen = params.get("img");
+        const autor = params.get("autor");
+        const categoria = params.get("categoria");
 
 
-          const params = new URLSearchParams(window.location.search);
-          const imagen = params.get("img");
-          const autor = params.get("autor");
-          const categoria = params.get("categoria");
+        if (document.getElementById("imagen-detalle")) {
+          document.getElementById("imagen-detalle").src = "assets/" + imagen;
+          document.getElementById("titulo-imagen").textContent = autor;
+          document.getElementById("autor-imagen").textContent = "Integrante de Iron Maiden";
 
 
-          if (document.getElementById("imagen-detalle")) {
-            document.getElementById("imagen-detalle").src = "assets/" + imagen;
-            document.getElementById("titulo-imagen").textContent = autor;
-            document.getElementById("autor-imagen").textContent = "Integrante de Iron Maiden";
+ /* Mostrar detalle de la imagen (souvenirs) */
+
+          const souvenirs = {
+            Monopolio: {
+              descripcion: "Juego de mesa edición Iron Maiden.",       
+            },
+            Cervezas: {
+              descripcion: "Cervezas Trooper edición especial.",    
+            },
+            Camisetas: {
+              descripcion: "Camisetas oficiales de la banda.",        
+            },
+            Candelabros: {
+              descripcion: "Candelabros temáticos Iron Maiden.",        
+            },
+            "Figuras de colección": {
+              descripcion: "Figuras de Eddie The Trooper.",       
+            },
+            Camiones: {
+              descripcion: "Camión de gira a escala.",       
+            },
+            Camisetas: {
+              descripcion: "Camisetas oficiales de la banda.",        
+            },
+            Balones: {
+              descripcion: "Balón Maiden edición limitada.",       
+            },
+            Buzos: {
+              descripcion: "Buzo Senjutsu original.",      
+            }
+          };
+
+          if (souvenirs[categoria]) {
+            // Ocultar la sección de integrantes si existe
+              const bloqueIntegrante = document.getElementById("detalle-integrante");
+              if (bloqueIntegrante) bloqueIntegrante.style.display = "none";
+
+            // Mostrar la sección de souvenirs
+              const bloqueSouvenir = document.getElementById("detalle-souvenir");
+              if (bloqueSouvenir) bloqueSouvenir.style.display = "block";
+
+              document.getElementById("titulo-souvenir").textContent = autor;
+              document.getElementById("texto-souvenir").textContent = souvenirs[categoria].descripcion;
+              return; // No retornar la seccion de integrantes
+            }
 
 
 
-    // 👇 AÑADIMOS ESTO SIN TOCAR TU LÓGICA
-    const souvenirs = {
-      Monopolio: {
-        descripcion: "Juego de mesa edición Iron Maiden.",
-        video: "https://www.youtube.com/embed/1g3_CFmnU7k"
-      },
-      Cervezas: {
-        descripcion: "Cervezas Trooper edición especial.",
-        video: "https://www.youtube.com/embed/rnZdiR0A5NM"
-      },
-      Camisetas: {
-        descripcion: "Camisetas oficiales de la banda.",
-        video: "https://www.youtube.com/embed/FG1NrQYXjLU"
-      },
-      Candelabros: {
-        descripcion: "Candelabros temáticos Iron Maiden.",
-        video: "https://www.youtube.com/embed/4J7QaoG-KeI"
-      },
-      "Figuras de colección": {
-        descripcion: "Figuras de Eddie The Trooper.",
-        video: "https://youtu.be/K7Eirw45gyg"
-      },
-      Camiones: {
-        descripcion: "Camión de gira a escala.",
-        video: "https://www.youtube.com/embed/n2WpdGAs5Nw"
-      },
-      Balones: {
-        descripcion: "Balón Maiden edición limitada.",
-        video: "https://www.youtube.com/embed/qB2UgKmfh2A"
-      },
-      Buzos: {
-        descripcion: "Buzo Senjutsu original.",
-        video: "https://www.youtube.com/embed/NkULdUtp8bU"
-      }
-    };
 
-    if (souvenirs[categoria]) {
-      // Oculta sección de integrantes si existe
-      const bloqueIntegrante = document.getElementById("detalle-integrante");
-      if (bloqueIntegrante) bloqueIntegrante.style.display = "none";
-
-      // Muestra sección de souvenirs
-      const bloqueSouvenir = document.getElementById("detalle-souvenir");
-      if (bloqueSouvenir) bloqueSouvenir.style.display = "block";
-
-      document.getElementById("titulo-souvenir").textContent = autor;
-      document.getElementById("texto-souvenir").textContent = souvenirs[categoria].descripcion;
-      document.getElementById("video-detalle").innerHTML = `
-        <iframe src="${souvenirs[categoria].video}" title="Video ${autor}" allowfullscreen></iframe>    
-      `;
-      return; // No ejecuta lo de integrantes
-    }
-
+ /* Mostrar detalle de la imagen (integrantes) */
 
           const integrantes = {
 
@@ -148,9 +141,11 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         }
 
-        emailjs.init("GoJXwoaefx-xLwI1V");
+
+
 
 /* Envío de formulario de contacto */
+
         document.getElementById("form-contacto").addEventListener("submit", function(e) {
           e.preventDefault();
 
