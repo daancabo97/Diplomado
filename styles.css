@@ -128,7 +128,7 @@ main {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 5px;
-  margin: auto;
+  margin: 0 auto;
   background-color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: block;
@@ -145,6 +145,22 @@ main {
   display: block;
   margin-bottom: 10px;
 }
+
+#detalle-souvenir {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff00; 
+  border-radius: 10px;          
+}
+
+#detalle-souvenir:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 .detalle-container {
   background-color: #bfbfbf;
@@ -172,7 +188,6 @@ main {
 .detalle-texto {
   max-width: 500px;
   text-align: justify;
-  margin-right: 3%;
 }
 
 .detalle-texto h3 {
